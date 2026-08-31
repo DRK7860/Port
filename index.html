@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabrício Cardoso | Portfólio de Tecnologia</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,10 +15,14 @@
             }
         }
     </script>
+    
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Importação do arquivo CSS externo (FUNDAMENTAL PARA O FUNDO GRID E ANIMAÇÕES) -->
+    <link rel="stylesheet" href="style.css">
     
     <!-- Script inicial para evitar o "piscar" da tela ao carregar o tema -->
     <script>
@@ -62,7 +67,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 pt-20 pb-16 md:pt-32 md:pb-24 text-center reveal">
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-16 text-center reveal">
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
             <div class="inline-flex items-center gap-2 bg-slate-900 dark:bg-amber-500 text-amber-400 dark:text-slate-900 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase shadow-sm">
                 🛠️ Engenharia & Hardware
@@ -91,12 +96,12 @@
     </section>
 
     <!-- Cards de Habilidades -->
-    <section id="habilidades" class="max-w-7xl mx-auto px-6 py-16">
-        <div class="text-center mb-12 reveal">
+    <section id="habilidades" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-10 reveal">
             <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Minhas Especialidades</h2>
             <p class="text-slate-600 dark:text-slate-400 mt-2 font-light">Mente analítica humana escalada com ferramentas modernas.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-stone-100 dark:border-slate-700 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 reveal delay-1 relative overflow-hidden">
                 <div class="w-12 h-12 bg-slate-900 dark:bg-slate-900/50 text-amber-400 rounded-2xl flex items-center justify-center mb-6 font-bold text-lg border dark:border-slate-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
@@ -122,13 +127,13 @@
     </section>
 
     <!-- Seção de Projetos -->
-    <section id="projetos" class="max-w-7xl mx-auto px-6 py-16">
-        <div class="text-center mb-12 reveal">
+    <section id="projetos" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-10 reveal">
             <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Projetos Recentes</h2>
             <p class="text-slate-600 dark:text-slate-400 mt-2 font-light">Casos reais onde código, hardware e inteligência se encontram.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="overflow-hidden rounded-3xl group relative h-96 shadow-sm border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 reveal delay-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="overflow-hidden rounded-3xl group relative h-80 shadow-sm border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 reveal delay-1">
                 <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000" alt="Código e Dados" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-8">
                     <div class="flex items-center gap-2 mb-2">
@@ -139,7 +144,7 @@
                     <p class="text-slate-300 text-sm font-light leading-relaxed">Construção de projetos para organização de dados e inventários. A arquitetura principal e o rigor técnico são meus, com a IA atuando na otimização e refatoração do código base.</p>
                 </div>
             </div>
-            <div class="overflow-hidden rounded-3xl group relative h-96 shadow-sm border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 reveal delay-2">
+            <div class="overflow-hidden rounded-3xl group relative h-80 shadow-sm border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 reveal delay-2">
                 <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=1000" alt="Hardware" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-8">
                     <span class="text-amber-400 font-semibold text-sm tracking-wider uppercase mb-1">Hardware & Scripting</span>
@@ -151,7 +156,7 @@
     </section>
 
     <!-- Área do Recrutador / Entrevista Rápida -->
-    <section id="sobre" class="max-w-7xl mx-auto px-6 py-20 reveal">
+    <section id="sobre" class="max-w-7xl mx-auto px-6 py-16 reveal">
         <div class="bg-white dark:bg-slate-800 p-8 md:p-12 rounded-3xl border border-stone-100 dark:border-slate-700 shadow-sm flex flex-col lg:flex-row gap-12">
             
             <div class="lg:w-1/3">
